@@ -1,0 +1,103 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #763c87; /* Couleur mauve clair uniforme */
+    color: #ffffff;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    background-color: #3b144a;
+    border-radius: 20px;
+    padding: 80px 100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 60vw; /* Rétrécit la largeur à 60% de la fenêtre */
+    height: 70vh; /* Ajuste la hauteur pour plus d'espace vertical */
+    margin: 0 auto;
+}
+
+.text {
+    flex: 1;
+    padding-left: 20px; /* Décale le texte vers la droite */
+}
+
+.intro-title {
+    color: #f8b400;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Kristi', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: 'Bangers', cursive;
+    margin: 10px 0; /* Petit espace au-dessus et en-dessous */
+}
+
+.intro-description {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+.profile-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.profile-title {
+    font-size: 14px;
+    font-style: italic;
+    color: #cccccc;
+    margin-top: 5px;
+}

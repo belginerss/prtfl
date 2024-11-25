@@ -1,0 +1,141 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #763c87;
+    color: #ffffff;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.timeline {
+    position: relative;
+    background-color: #3b144a;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 1000px; /* Augmente la largeur maximale du conteneur */
+    width: 95%; /* Augmente la largeur pour occuper plus d’espace horizontal */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #f8b400;
+    margin-bottom: 20px;
+    font-family: 'Bangers';
+}
+
+/* Ligne de temps centrale */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100px; /* Décalage de la ligne pour qu'elle commence sous le titre */
+    bottom: 20px; /* Décalage pour arrêter la ligne avant le bas */
+    width: 4px;
+    background-color: #f8b400;
+    transform: translateX(-50%);
+}
+
+/* Style pour chaque élément de la timeline */
+.timeline-item {
+    width: 45%;
+    padding: 20px;
+    position: relative;
+}
+
+.timeline-item.left {
+    float: left;
+    clear: both;
+    text-align: right;
+    margin-right: 55%; /* Crée un espace pour la ligne centrale */
+}
+
+.timeline-item.right {
+    float: right;
+    clear: both;
+    text-align: left;
+    margin-left: 55%; /* Crée un espace pour la ligne centrale */
+}
+
+/* Contenu de chaque bloc */
+.timeline-content {
+    position: relative;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    background-color: #f8b400;
+    border-radius: 50%;
+}
+
+/* Points sur la ligne de temps */
+.timeline-item.left .timeline-content::before {
+    right: -40px;
+}
+
+.timeline-item.right .timeline-content::before {
+    left: -40px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #f8b400;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 18px;
+    color: #7b5388;
+    margin-bottom: 10px;
+    font-family: 'Barlow', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #dddddd;
+}
+
+/* Clearfix pour éviter que les éléments flottants ne débordent */
+.timeline::after {
+    content: "";
+    display: table;
+    clear: both;
+}

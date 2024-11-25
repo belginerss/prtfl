@@ -1,0 +1,83 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #763c87;
+    color: #ffffff;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centre verticalement */
+    height: 90vh; /* Prend toute la hauteur de la page pour le centrage */
+}
+
+.contact {
+    background-color: #3b144a;
+    border-radius: 20px;
+    padding: 80px 40px; /* Augmente la hauteur avec un padding plus grand */
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #f8b400;
+    margin-bottom: 20px;
+    font-family: 'Bangers';
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 16px;
+    color: #dddddd;
+    line-height: 1.6;
+}
+
+.contact-details {
+    max-width: 50%; /* Limite strictement le texte de droite à 50% du conteneur */
+    word-break: break-word; /* Force le retour à la ligne pour éviter le dépassement */
+    text-align: right;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #f8b400;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
